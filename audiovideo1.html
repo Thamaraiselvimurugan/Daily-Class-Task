@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+body{background-color:pink;}
+</style>
+</head> 
+<body> 
+<center><h2>Audio video player</h2></center>
+<div style="background-color:"blue">
+  
+
+
+<video id="VideoPlayer" width="1500" height="500">
+<source src="sid.mp4" type="video/mp4"></video><br<br>
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button>
+<button onclick="stopVid()" type="button">Stop Video</button><br> 
+<br> </div>
+
+<script> 
+var vid = document.getElementById("VideoPlayer"); 
+
+function playVid() { 
+
+    vid.play(); 
+
+} 
+
+function pauseVid() { 
+
+    vid.pause(); 
+
+}
+
+function stopVid() {
+
+    vid.pause();
+
+    vid.currentTime=0; 
+
+}
+
+</script> 
+
+
+<br>
+<div style="background-color:gray">
+  
+<audio id="AudioPlayer" height="700" width="400">
+
+<source src="anjali1.MP3" type="audio/MP3">
+
+
+ </audio><b>
+
+<iframe src="text.html" height="700" width="500"></iframe></b>
+
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+<button onclick="stopAudio()" type="button">Stop Audio</button> 
+
+</div>
+
+<script>
+
+var m = document.getElementById("AudioPlayer"); 
+
+
+
+function playAudio() { 
+
+    m.play(); 
+
+} 
+
+
+
+function pauseAudio() { 
+
+    m.pause(); 
+
+} 
+
+
+
+function stopAudio(){
+
+    m.pause();
+
+    m.currentTime = 0;
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html>
+
+<head>
+<center>
+<h1>ANSWER ALL THE QUESTIONS</h1></center>
+
+</head>
+
+<body bgcolor="lightgreen">
+
+<p id="demo"><p>
+
+<form>
+
+
+
+
+
+<p>1. LOTUS is our national flower</p>
+
+<input id="q1" type="radio" name="Gender"  >True
+
+<input id="q12" type="radio" name="Gender"  >False
+
+
+
+<p>2. TIGER is our national animal</p>
+
+<input id="q2" type="radio" name="Gender1"  >True
+
+<input id="q22" type="radio" name="Gender1"  >False
+
+
+
+<p>3.INDIA is not a democratic country</p>
+
+<input id="q3" type="radio" name="Gender2"  >True
+
+<input  id="q32" type="radio" name="Gender2"  >False
+
+
+
+<p>4.Earth is the 3rd planet</p>
+
+<input id="q4" type="radio" name="Gender3"  >True
+
+<input id="q42" type="radio" name="Gender3"  >False
+
+
+
+<p>5.sun rises in the west</p>
+
+<input id="q5" type="radio" name="Gender4"  >True
+
+<input id="q52" type="radio" name="Gender4" >False
+
+</form>
+
+
+
+<button type="submit" onclick="pass2()">submit</button><br>
+
+
+
+<script>
+
+function pass2(){ bgcolor="lightgreen";
+
+var count=0;
+
+
+
+if(q1.checked){count=count+1;}
+
+if(q2.checked){count=count+1;}
+
+if(q32.checked){count=count+1;}
+
+if(q4.checked){count=count+1;}
+
+if(q52.checked){count=count+1;}
+
+document.write("Hello,your Result out of 5 is:"+count);
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<body bgcolor="orange"><form><center>
+<h2>E-MAIL FORM</h2>
+<b>FROM:</b>&nbsp&nbsp&nbsp<input type="email" value="" placeholder="name@email.com" required /><br><br>
+<b>TO:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" value="" placeholder="name@email.com" required /><br><br>
+<a href="http://www.sitepoint.com/client-side-form-validation-html5/"></a><br><br>
+<b>SUBJECT:</b>&nbsp&nbsp&nbsp<input type="text" name="submit"><br><br>
+<b>COMPOSE:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea name="message" rows="10" cols="30">
+
+</textarea> <br><br>
+
+  
+  
+  <input type="submit" value="Submit" />
+<head>
+  <script src="https://docraptor.com/docraptor-1.0.0.js"></script>
+  <script>
+    var downloadPDF = function() {
+      DocRaptor.createAndDownloadDoc("YOUR_API_KEY_HERE", {
+        test: true, // test documents are free, but watermarked
+        type: "pdf",
+        document_content: document.querySelector('html').innerHTML, 
+        // document_content: "<h1>Hello world!</h1>",               
+        // document_url: "http://example.com/your-page",           
+        // javascript: true,                                        
+        // prince_options: {
+        //   media: "screen",                      
+        // }
+      })
+    }
+  </script>
+  <style>
+    @media print {
+      #pdf-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+  <h1>convertion</h1>
+  <input id="pdf-button" type="button" value="Download PDF" onclick="downloadPDF()" />
+
+
+  
+   
+
+</form></center>
+</body>
+</html>
